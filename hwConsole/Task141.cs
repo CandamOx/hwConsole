@@ -10,6 +10,7 @@ namespace hwConsole
 		}
 
 		public static double Task() {
+			Console.WriteLine("\tЗадача 1.4.1");
 			try {
 				double E = 1.0;
 
