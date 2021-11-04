@@ -1,18 +1,14 @@
-﻿/*using System;
+﻿using System;
 using System.IO;
 
-namespace hwConsole
-{
-    class Task522
-    {
-		public class Him
-		{
+namespace hwConsole {
+    class Task522 {
+		public class Him {
 			public Char[] nazv = new Char[50];
 			public int ves;
 			public Char[] prov = new Char[30];
 			public float k;
-			public bool Polu(int i)
-			{
+			public bool Polu(int i) {
 				if (string.Compare(Convert.ToString(prov[i]), "полупроводник") == 0)
 					if (k > 5)
 						return true;
@@ -20,23 +16,18 @@ namespace hwConsole
 			}
 		};
 
-		class Table
-		{
+		class Table {
 			public Him t;
 			public int n;
 
-			Table(byte[] name)
-			{
+			Table(byte[] name) {
 				n = 0;
 				char[] temp = new char[255];
 				FileStream f, f2;
 				f.Read(name);
-				//f.Open(name);
 
-				if (f)
-				{
-					while (!f.eof())
-					{
+				if (f) {
+					while (!f.eof()) {
 						f.getline(temp, 255);
 						if (strcmp(temp, "") != 0)
 							n++;
@@ -47,13 +38,11 @@ namespace hwConsole
 				Him[] tbl = new Him[n];
 				n = 0;
 
-				f2.open(name);
-				if (f2)
-				{
-					while (!f2.eof())
-					{
-						f2 >> tbl[n].nazv;
-						f2 >> tbl[n].ves;
+				f2.Read(name);
+				if (f2) {
+					while (!f2.eof()) {
+						f2.Write(tbl[n].nazv);
+						f2.Write(tbl[n].ves);
 						f2 >> tbl[n].prov;
 						f2 >> tbl[n].k;
 						n++;
@@ -98,4 +87,3 @@ namespace hwConsole
 		}
 	}
 }
-*/
