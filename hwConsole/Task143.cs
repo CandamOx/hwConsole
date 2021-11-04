@@ -1,19 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.IO;
 
 namespace hwConsole
 {
-    class Task143
-    {
-		private static double Minn(double ai, double ani)
-		{
+    class Task143 {
+			private static double Minn(double ai, double ani) {
 			double min = Math.Abs(ai) - Math.Abs(ani);
 			return min;
 		}
 
 		public static int Task()
 		{
+			Console.WriteLine("\tЗадача 1.3.2");
+
 			try
 			{
 				Console.WriteLine("Vvedite razmernost massiva A (chetnoe chislo): ");
@@ -41,7 +40,7 @@ namespace hwConsole
 
 				return 0;
 			}
-			catch (System.IO.IOException e)
+			catch (IOException e)
 			{
 				Console.WriteLine("\n Введены неверные параметры, операция прервана");
 				if (e.Source != null)

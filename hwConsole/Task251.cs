@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.IO;
 
 namespace hwConsole
 {
@@ -56,7 +55,7 @@ namespace hwConsole
 
 				return 0;
 			}
-			catch (System.IO.IOException e)
+			catch (IOException e)
 			{
 				Console.WriteLine("\n Введены неверные параметры, операция прервана");
 				if (e.Source != null)

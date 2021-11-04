@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace hwConsole
 {
@@ -6,6 +7,19 @@ namespace hwConsole
     {
         static void Main(string[] args)
         {
+            Random rnd = new Random();
+            Console.WriteLine("Вино - 1, Коньяк - 2: ");
+            Console.WriteLine(rnd.Next(1, 3));
+            Console.WriteLine(rnd.Next(1, 3));
+            Console.WriteLine(rnd.Next(1, 3));
+            Console.WriteLine(rnd.Next(1, 3));
+            Console.WriteLine(rnd.Next(1, 3));
+            Console.WriteLine(rnd.Next(1, 3));
+            Console.WriteLine(rnd.Next(1, 3));
+            Console.WriteLine(rnd.Next(1, 3));
+            Console.WriteLine(rnd.Next(1, 3));
+            Thread.Sleep(1000000);
+
             Console.WriteLine("Копать Ксения \t ИЭозс-41-19 \t 9 вариант");
             Task12.Task();
             Task132.Task();

@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.IO;
 
 namespace hwConsole
 {
@@ -35,12 +34,11 @@ namespace hwConsole
 					}
 					Console.WriteLine("\n", X[i], " * ", Y[i], " = ", Z[i]);
 				}
-
 				Console.WriteLine("\n Количество пар = ", k, "\n Сумма произведений = ", sum);
 
 				return 0;
 			}
-			catch (System.IO.IOException e) {
+			catch (IOException e) {
 				Console.WriteLine("\n Введены неверные параметры, операция прервана");
 				if (e.Source != null)
 					Console.WriteLine("IOException source: {0}", e.Source);
