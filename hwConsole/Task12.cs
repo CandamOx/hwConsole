@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.IO;
 
-namespace hwConsole
-{
+namespace hwConsole {
     class Task12 {
-		private static double Ypoint(double x)
-		{
+		private static double Ypoint(double x) {
 			double y = Math.Abs(
 				Math.Sign(
 					Math.Sqrt(10.5 * x)))
@@ -14,27 +11,24 @@ namespace hwConsole
 				+ 2 * x * 3.14;
 			return y;
 		}
-		public static int Task()
-		{
-			try
-			{
+
+		public static int Task() {
+			Console.WriteLine("\tЗадача 1.2");
+			try {
 				Console.WriteLine("\nВвести точку начала отрезка");
 				double A = Console.Read();
 				Console.WriteLine("\nВвести точку конца отрезка");
 				double B = Console.Read();
+
 				if (A >= B)
-				{
 					Console.WriteLine("\n Введённые числа не удовлетворяют условию. A <= B \n");
-				}
-				else
-				{
+				else {
 					Console.WriteLine("\n Введите количество вычислений N = ");
 					int N = Console.Read();
 					double h = (B - A) / (N - 1);
 					double x = A;
 
-					for (int i = 0; i < N; i++)
-					{
+					for (int i = 0; i < N; i++) {
 						double y = Ypoint(x);
 						Console.WriteLine("x = ", x, " \t y = ", y);
 						x += h;
@@ -43,8 +37,7 @@ namespace hwConsole
 
 				return 0;
 			}
-			catch (System.IO.IOException e)
-			{
+			catch (IOException e) {
 				Console.WriteLine("\n Введены неверные параметры, операция прервана");
 				if (e.Source != null)
 					Console.WriteLine("IOException source: {0}", e.Source);

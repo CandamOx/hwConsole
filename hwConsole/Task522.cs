@@ -1,4 +1,5 @@
 ﻿/*using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Text;
 
@@ -26,12 +27,13 @@ namespace hwConsole
 			public Him t;
 			public int n;
 
-			Table(char name)
+			Table(byte[] name)
 			{
 				n = 0;
 				char[] temp = new char[255];
 				FileStream f, f2;
-				f.Open(name);
+				f.Read(name);
+				//f.Open(name);
 
 				if (f)
 				{
@@ -41,7 +43,7 @@ namespace hwConsole
 						if (strcmp(temp, "") != 0)
 							n++;
 					}
-					f.close();
+					f.Close();
 				}
 
 				Him[] tbl = new Him[n];
@@ -58,7 +60,7 @@ namespace hwConsole
 						f2 >> tbl[n].k;
 						n++;
 					}
-					f2.close();
+					f2.Close();
 				}
 			}
 
