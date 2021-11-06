@@ -44,6 +44,7 @@ namespace hwConsole
 
 		public static int Task()
 		{
+			Console.WriteLine("\tЗадача 5.2.1");
 			try
 			{
 				const int kolichestvo_student = 5;

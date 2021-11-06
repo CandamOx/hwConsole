@@ -55,6 +55,7 @@ namespace hwConsole
 
 		public static int Task()
 		{
+			Console.WriteLine("\tЗадача 2.5.3");
 			try
 			{
 				const int n = 5;

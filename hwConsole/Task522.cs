@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.IO;
 
 namespace hwConsole {
@@ -39,23 +39,21 @@ namespace hwConsole {
 				n = 0;
 
 				f2.Read(name);
-				if (f2) {
 					while (!f2.eof()) {
 						f2.Write(tbl[n].nazv);
 						f2.Write(tbl[n].ves);
-						f2 >> tbl[n].prov;
-						f2 >> tbl[n].k;
+						f2.Write(tbl[n].prov);
+						f2.Write(tbl[n].k);
 						n++;
 					}
 					f2.Close();
-				}
 			}
 
 			void Print()
 			{
 				Console.WriteLine("Все данные из файла ");
 				for (int i = 0; i < n; i++)
-					cout << tbl[i].nazv << "\t  Уд. вес: " << tbl[i].ves << "\t" << tbl[i].prov << "\t Кол-во: " << tbl[i].k << "\n";
+					Console.WriteLine(tbl[i].nazv, "\t  Уд. вес: ", tbl[i].ves, "\t", tbl[i].prov, "\t Кол-во: ", tbl[i].k);
 			}
 
 			void Find()
@@ -63,7 +61,7 @@ namespace hwConsole {
 				cout << "Полупроводники, которых более 5:" << endl;
 				for (int i = 0; i < n; i++)
 					if (t[i].polu())
-						cout << tbl[i].nazv << "\t Уд. вес: " << tbl[i].ves << "\n";
+						Console.WriteLine(tbl[i].nazv, "\t Уд. вес: ", tbl[i].ves);
 			}
 
 		};
@@ -86,4 +84,4 @@ namespace hwConsole {
 			}
 		}
 	}
-}
+}*/

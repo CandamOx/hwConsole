@@ -81,6 +81,7 @@ namespace hwConsole
 
         public static int Task()
         {
+            Console.WriteLine("\tЗадача 4.3.3");
             try
             {
                 Matrix test = new Matrix();

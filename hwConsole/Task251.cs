@@ -16,6 +16,7 @@ namespace hwConsole
 
 		public static int Task()
 		{
+			Console.WriteLine("\tЗадача 2.5.1");
 			try
 			{
 				double[,] A = new double[n, m];
