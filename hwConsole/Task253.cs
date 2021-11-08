@@ -12,7 +12,7 @@ namespace hwConsole
 			Console.WriteLine("Введите матрицу ", n, "x", n, ":\n");
 			for (i = 0; i < n; i++)
 				for (j = 0; j < n; j++)
-					a[i, j] = Console.Read();
+					a[i, j] = float.Parse(Console.ReadLine());
 			return a;
 		}
 

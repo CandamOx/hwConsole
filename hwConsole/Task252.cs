@@ -34,7 +34,7 @@ namespace hwConsole
 				for (i = 0; i < n; i++)
 				{
 					for (j = 0; j < n; j++)
-						A[i, j] = Console.Read();
+						A[i, j] = Double.Parse(Console.ReadLine());
 				}
 
 				Console.WriteLine("\n Poluchena matrica: \n");

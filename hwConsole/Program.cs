@@ -18,8 +18,6 @@ namespace hwConsole
             Task253.Task();
             Task433.Task();
             Task521.Task();
-            //Task522.Task();
-
         }
     }
 }

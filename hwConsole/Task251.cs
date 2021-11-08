@@ -26,7 +26,7 @@ namespace hwConsole
 				{
 					for (j = 0; j < m; j++)
 					{
-						A[i, j] = Console.Read();
+						A[i, j] = Double.Parse(Console.ReadLine());
 					}
 				}
 

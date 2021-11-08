@@ -16,9 +16,9 @@ namespace hwConsole {
 			Console.WriteLine("\tЗадача 1.2");
 			try {
 				Console.WriteLine("\nВвести точку начала отрезка");
-				double A = Console.Read();
+				double A = Double.Parse(Console.ReadLine()); 
 				Console.WriteLine("\nВвести точку конца отрезка");
-				double B = Console.Read();
+				double B = Double.Parse(Console.ReadLine());
 
 				if (A >= B)
 					Console.WriteLine("\n Введённые числа не удовлетворяют условию. A <= B \n");

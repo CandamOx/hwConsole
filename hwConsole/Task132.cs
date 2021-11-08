@@ -19,7 +19,7 @@ namespace hwConsole
             Console.WriteLine("\tЗадача 1.3.2"); 
             try {
                 Console.WriteLine("\n Введите x: ");
-                double x = Console.Read();
+                double x = Double.Parse(Console.ReadLine());
                 Console.WriteLine("\n Введите n: ");
                 int n = Console.Read();
 
